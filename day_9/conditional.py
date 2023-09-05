@@ -29,8 +29,6 @@ else :
 # Enter your age: 30
 # You are 5 years older than me.
 '''
-
-'''
 my_age = 21
 your_age =int(input('Enter you age '))
 
@@ -44,22 +42,32 @@ elif my_age > your_age:
     print(f"you are {age_gap} year elder than you  ")
 else : 
     print('Invalid input ')
+
+
+'''
     
-    
 
 
 
-
-
-
-
-
-# Get two numbers from the user using input prompt. If a is greater than b return a is greater than b, if a is less b return a is smaller than b, else a is equal to b. Output:
+# Get two numbers from the user using input prompt. 
+# If a is greater than b return a is greater than b, 
+# if a is less b return a is smaller than b, else a is equal to b. Output:
 # Enter number one: 4
 # Enter number two: 3
 # 4 is greater than 3
 
+"""
+a = int(input('Enter the first number : '))
+b = int(input('Enter the first number : '))
 
+if a > b :
+    print(f"{a} is greater than {b}")
+elif a < b :
+    print(f"{b} is greater than {a}")
+else:
+    print("Both are equal")
+
+"""
 
 
 
@@ -72,18 +80,74 @@ else :
 # 60-69, C
 # 50-59, D
 # 0-49, F
+'''
+score = (int(input("Enter the marks you get : ")))
+
+if score <= 49:
+    print("F")89
+elif score <= 59:
+    print('D')
+elif score <= 69:
+    print('C')
+elif score <= 89:
+    print('B')
+elif score <= 100:
+    print('A')
+else : 
+    TypeError
+'''
 
 
 
 
 
+# Check if the season is Autumn, Winter, Spring or Summer.  
+# December, January or February, the season is Winter. 
+# March, April or May,  the season is Spring 
+# June, July or August, the season is Summer
+# If the user input is: September, October or November, the season is Autumn.
 
-# Check if the season is Autumn, Winter, Spring or Summer. If the user input is: September, October or November, the season is Autumn. December, January or February, the season is Winter. March, April or May, the season is Spring June, July or August, the season is Summer
+"""
+season = input("Enter the season : ")
+season = season.upper()
+x = NameError
+
+if season == ("DECEMBER" or "JANUARY" or "FEBRUARY"):
+    print("the Season is Winter ")
+elif season == ("MARCH" or "APRIL" or "MAY"):
+    print("the Season is spring ")
+elif season == ("JUNE" or "JULY" or "AUGUST"):
+    print("the Season is summer ")
+elif season == ("SEPTEMBER" or "OCTOBER" or "NOVEMBER") :
+    print("the Season is Autumn ")
+else:
+    print("Invalid input : " ,x)
+
+"""
+
+
+
+
 
 # The following list contains some fruits:
 
 # fruits = ['banana', 'orange', 'mango', 'lemon']
-# If a fruit doesn't exist in the list add the fruit to the list and print the modified list. If the fruit exists print('That fruit already exist in the list')
+# If a fruit doesn't exist in the list add the fruit to the list and print the modified list. 
+# If the fruit exists print('That fruit already exist in the list')
+"""
+i = 0
+while True : 
+    fruits = ['banana', 'orange', 'mango', 'lemon']
+    find = input("Enter food you find : ")
+    if find in fruits :
+            print("That fruit is already exist in the list ")
+    else:
+        fruits[-1] = find
+        print("your food is not exist, it added sucessfully   ")
+        i += 1
+        if i > 5:
+            break
+"""
 
 # Exercises: Level 3
 # Here we have a person dictionary. Feel free to modify it!
