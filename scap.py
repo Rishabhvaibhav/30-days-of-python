@@ -1,25 +1,38 @@
-import requests
-from bs4 import BeautifulSoup
+# pizza order program 
 
-# Replace this URL with the LinkedIn profile URL you want to scrape
-linkedin_url = 'https://www.linkedin.com/search/results/people/?currentCompany=%5B86811619%5D&origin=COMPANY_PAGE_CANNED_SEARCH&sid=t-U'
+size = input("Enter the size you want S/M/L :  ")
 
-# Send an HTTP GET request to the LinkedIn profile URL
-response = requests.get(linkedin_url)
-
-# Check if the request was successful (status code 200)
-if response.status_code == 200:
-    # Parse the HTML content of the page
-    soup = BeautifulSoup(response.content, 'html.parser')
-    
-    # Extract the name and headline
-    name = soup.find('h1', {'class': 'text-heading-xlarge inline t-24 v-align-middle break-words'})
-    headline = soup.find('p', {'class': 'mt1 t-18 t-black t-normal break-words'})
-    
-    if name and headline:
-        print(f"Name: {name.text.strip()}")
-        print(f"Heading: {headline.text.strip()}")
-    else:
-        print("Name or headline not found on the profile.")
+if size == "s" or size == "S":
+    cost = 100
+    print("you choose small pizza ")
+elif size == "m" or size == "M":
+    cost = 200
+    print("you choose medium pizza ")
+elif size == "l" or size == "L":
+    cost = 300
+    print("you choose large pizza ")
 else:
-    print("Failed to retrieve the LinkedIn profile.")
+    print("Invalid Entry ")
+    exit()
+
+addon = input("if want to add peperroni enter Y / N ")
+
+if addon == "y" or addon =="Y":
+    if cost == 100:
+         cost = cost + 30
+         print(f"Your current cost is {cost}")
+    elif cost == 200:
+         cost = cost + 50
+         print(f"Your current cost is {cost}")
+    elif cost == 300:
+         cost = cost + 80
+         print(f"Your current cost is {cost}")
+    else: 
+        pass
+cheese = input("you want extra cheese :Y / N")   
+if cheese == "y" or cheese == "Y":
+    cost = cost + 20
+
+else:
+    pass
+print(f"Your current pizza Cost is {cost}")
