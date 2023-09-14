@@ -1,9 +1,15 @@
-import random
-Name = input("Enter name as a sepreted commas : ")
-Name = Name.split(",")
-member = len(Name)
 
-toss = random.randint(1,member)
+position = input("Enter the position you want to hide from row to column ")
+# position = int(position)
+#32
+row = int(position[0])
+column = int(position[1])
 
-who_will_pay = Name[toss]
-print(who_will_pay) 
+hide = matrix[row]
+hide[column] = "X"
+
+print(f"{row0}\n{row1}\n{row2}")
+
+
+
+
