@@ -1,34 +1,18 @@
-# pizza order program 
+# Calculate the value of y (y = x^2 + 6x + 9). 
+# Try to use different x values and figure out at what x value y is going to be 0.
+# for i in range(1)
 
-size = input("Enter the size you want \n Small = s \n Medium = m \n Large= l \n Pick Any pizza You want :  ")
 
-if size == "s" or"S":
-    cost = 100
-    print("you choose small pizza ")
-elif size == "m" or "M":
-    cost = 200
-    print("you choose medium pizza ")
-elif size == "l" or "L":
-    cost = 300
-    print("you choose large pizza ")
-else:
-    exit()
+# y = (x^2) + (6*x + 9)
+# print(y)
+"""
+list of skills : python , SQL , Django , pandas , numpy , pyspark , html , css, javascript 
 
-addon = input("if want to add peperroni enter Y / N ")
-
-if addon == "y" or "Y":
-    if cost == 100:
-         cost = cost + 30
-         print(f"Your current cost is {cost}")
-    elif cost == 200:
-         cost = cost + 50
-         print(f"Your current cost is {cost}")
-    elif cost == 300:
-         cost = cost + 80
-         print(f"Your current cost is {cost}")
-    else: 
-        pass
-cheese = input("you want extra cheese :Y / N")   
-if cheese == "y" or "Y":
-    cost = cost + 20
-    print(f"current code is : {cost}")
+i want to create a timesheet for learning all the skills and modules 
+with 2 month of time duration , 
+create the excel sheet format , like a daily tracker 
+to fastest way to complete whole topic in 2 month only 
+genererate skils and topic day wise 
+with familier whole basic to advanced
+i allready clear some basic of python ,
+generate according to that 
