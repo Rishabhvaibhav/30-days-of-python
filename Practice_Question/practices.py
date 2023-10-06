@@ -1,11 +1,11 @@
-#  0 1 1 2 3 5 8 12
 
-user_input= int(input( ))
+number = [1,2,3,4,5,6,7,58,45,23,56]
 
-first_no = 0
-second_no = 1
-fibo = [0]
-
-for i in range(user_input):
-    user_input[0] 
+greater_number = 0
+for i in number:
+    if i < greater_number:
+        greater_number = i 
+        
+print(greater_number)
+        
     
