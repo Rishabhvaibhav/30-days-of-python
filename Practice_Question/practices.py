@@ -1,11 +1,116 @@
+Status
 
-number = [1,2,3,4,5,6,7,58,45,23,56]
 
-greater_number = 0
-for i in number:
-    if i < greater_number:
-        greater_number = i 
-        
-print(greater_number)
-        
-    
+
+
+Screen FP
+
+
+
+
+Screen Reject
+
+
+
+
+Screen Select
+
+
+
+
+L1 interview FP
+
+
+
+
+L1 Select
+
+
+
+
+L1 Reject
+
+
+
+
+L2 interview FP
+
+
+
+
+L2 Select
+
+
+
+
+L2 Hold
+
+
+
+
+L2 Reject
+
+
+
+
+Client Screening FP
+
+
+
+
+Client Screening Reject
+
+
+
+
+Client L1 Interview FP
+
+
+
+
+Client L1 Reject
+
+
+
+
+Client L2 Interview FP
+
+
+
+
+Client kept on Hold
+
+
+
+
+Client L2 Reject
+
+
+
+
+Client Final Select
+
+
+
+
+Drop
+
+
+
+
+Offered
+
+
+
+
+Offer Declined
+
+
+
+
+Joined
+
+
+
+
+Absconded
